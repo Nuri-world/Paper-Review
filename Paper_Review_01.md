@@ -1,6 +1,6 @@
 
-# [Review] 논문 제목 (연도)
-**Authors**: 저자 이름  
+# [Review] A Heat Method for Generalized Signed Distance (2024)
+**Authors**: Nicole Feng
 **Link**: [공식 논문 링크(arXiv 등)]
 
 ## 📌 Summary
