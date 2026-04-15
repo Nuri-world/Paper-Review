@@ -18,7 +18,7 @@
 ## 💻 Implementation Details (Focused on Volume Data)
 현재 개발 중인 "SDF 기반 실시간 볼륨 다중 변형 시스템"의 시각화 및 파라미터 최적화(Optimization) 과정에 본 논문의 개념을 부분적으로 차용하여 파이프라인을 고도화할 수 있습니다.
 
-- **환경**: C++, CUDA (역전파 및 그래디언트 연산 가속)
+- **환경**: C++ (역전파 및 그래디언트 연산 가속)
 - **주요 구현 사항**:
   - **Differentiable SDF Pipeline**: 볼륨 데이터가 다중 변형될 때, 변형 파라미터(Deformation parameters)를 역산(Inverse)하여 자동으로 최적화할 수 있도록 미분 가능한 스피어 트레이싱 구조를 적용합니다.
   - **안정적인 Gradient 확보**: 볼륨이 겹치거나 잘려나가는 불연속 구간(Silhouette/Occlusion)에서도 그래디언트가 터지지(발산) 않도록 논문의 Jacobian 보정 수식을 렌더링 셰이더(Shader)에 통합합니다.
