@@ -3,7 +3,7 @@
 **Link**: [공식 논문 링크 추가 필요]
 
 ## 📌 Summary
-본 논문은 노이즈, 구멍(hole), 자가 교차(self-intersection) 등이 포함된 **손상된 기하 구조(Broken Geometry)**에서도 안정적으로 **SDF(Signed Distance Function)**를 계산할 수 있는 **Signed Heat Method(SHM)**를 제안합니다. 기존의 Eikonal 방정식 기반 방법론들이 입력 데이터의 완벽성(Watertight)을 가정하여 아티팩트가 발생하는 것과 달리, 열 방정식(Heat Equation)의 확산 원리를 활용해 물리적으로 타당하고 매끄러운 **일반화된 부호 거리(Generalized Signed Distance, GSD)**를 산출합니다.
+본 논문은 노이즈, 구멍(hole), 자가 교차(self-intersection) 등이 포함된 손상된 기하 구조(Broken Geometry)에서도 안정적으로 SDF(Signed Distance Function)를 계산할 수 있는 Signed Heat Method(SHM)를 제안합니다. 기존의 Eikonal 방정식 기반 방법론들이 입력 데이터의 완벽성(Watertight)을 가정하여 아티팩트가 발생하는 것과 달리, 열 방정식(Heat Equation)의 확산 원리를 활용해 물리적으로 타당하고 매끄러운 일반화된 부호 거리(Generalized Signed Distance, GSD)를 산출합니다.
 
 ## 🚀 Key Takeaways
 논문에서 제시하는 핵심 알고리즘 파이프라인은 다음과 같은 3단계로 구성됩니다:
