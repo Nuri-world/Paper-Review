@@ -1,6 +1,7 @@
 # [Review] Differentiable Signed Distance Function Rendering (2022)
-**Authors**: Delio Vicini, Sébastien Speierer, Wenzel Jakob (Slide by: 박누리)
-**Link**: [공식 논문 링크 추가 필요]
+**Authors**: Delio Vicini, Sébastien Speierer, Wenzel Jakob
+**Link**: 
+
 
 ## 📌 Summary
 본 논문은 물리 기반 미분 가능 렌더링(Physically-based Differentiable Rendering, PBDR)에서 발생하는 불연속성(Discontinuity)으로 인한 그래디언트 왜곡(Gradient bias) 문제를 해결하는 새로운 접근법을 제안합니다. 메쉬(Mesh)나 볼륨(Volume) 대신 부드러운 그래디언트를 제공하는 SDF(Signed Distance Function)를 활용하며, 스피어 트레이싱(Sphere Tracing) 과정에 **재매개화(Reparameterization)** 기법을 도입하여 실루엣(Silhouette) 손실 함수 없이도 3D 형상을 매우 안정적으로 재구성(Reconstruction)하고 최적화할 수 있음을 증명했습니다.
@@ -15,7 +16,7 @@
    - 단순한 형태 복원을 넘어 그림자(Shadows)나 상호 반사(Interreflections) 같은 2차적인 광원 효과까지 그래디언트로 역산할 수 있어, 훨씬 정교하고 사실적인 3D 토폴로지 복원이 가능합니다.
 
 ## 💻 Implementation Details (Focused on Volume Data)
-현재 개발 중인 **"SDF 기반 실시간 볼륨 다중 변형 시스템"**의 시각화 및 파라미터 최적화(Optimization) 과정에 본 논문의 개념을 부분적으로 차용하여 파이프라인을 고도화할 수 있습니다.
+현재 개발 중인 "SDF 기반 실시간 볼륨 다중 변형 시스템"의 시각화 및 파라미터 최적화(Optimization) 과정에 본 논문의 개념을 부분적으로 차용하여 파이프라인을 고도화할 수 있습니다.
 
 - **환경**: C++, CUDA (역전파 및 그래디언트 연산 가속)
 - **주요 구현 사항**:
